@@ -1,0 +1,54 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+    <main class="main pages">
+        <div class="page-header breadcrumb-wrap">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="{% url 'core:index' %}" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                    <span></span> Pages <span></span> User Guide
+                </div>
+            </div>
+        </div>
+        <div class="page-content pt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 m-auto">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="single-page pr-30 mb-lg-0 mb-sm-5">
+                                    <div class="single-header style-2">
+                                        <h2>User Guide</h2>
+                                    </div>
+                                    <div class="single-content mb-50">
+                                        <p>Greetings,Thank you for choosing AliCart. Below are step-by-step instructions on how to navigate our website.</p>
+                                        <h4>Purchasing as a Guest:</h4>
+                                        <p>You can make purchases without an account. During checkout, please specify your address and phone number. This information will allow us to contact you and discuss the details of your order.</p>
+                                        <p>Click the video below to visualize the process.</p>
+                                        <div class="video-container">
+                                            <video style="width: 100%; max-width: 700px; height: auto;" controls>
+                                                <source src="{% static 'assets/video/without_acc.mp4' %}" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <h4>Creating an Account - Vendor:</h4>
+                                        <p>If you wish to sell your products as well as buy, you'll need to create an account. <a href="{% url 'userauths:sign-up' %}">Please click here to create an account</a>. To sign up, enter your Gmail address and click 'Send OTP'. You will receive an OTP code; enter this code in the designated field below the email address to verify your identity. Once verified, you can set up your username and password to complete the registration and log in.</p>
+                                        <p>You can make purchases without an account. During checkout, please specify your address and phone number. This information will allow us to contact you and discuss the details of your order.</p>  
+                                        <div class="video-container">
+                                            <video style="width: 100%; max-width: 700px; height: auto;" controls>
+                                                <source src="{% static 'assets/video/createacc.mp4' %}" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>                                      
+                                        <h4>Contact Us</h4>
+                                        <p>If you have any questions, please <a href="{% url 'core:contact' %}">contact us</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
