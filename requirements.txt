@@ -47,6 +47,7 @@ redis==5.0.1
 requests==2.31.0
 crispy-bootstrap5
 six==1.16.0
+django-ckeditor-5
 sqlparse==0.5.0
 stripe==7.0.0
 tablib==3.5.0
