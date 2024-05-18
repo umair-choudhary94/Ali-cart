@@ -54,3 +54,4 @@ stripe==7.0.0
 tablib==3.5.0
 whitenoise==5.2.0
 reportlab
+whitenoise
