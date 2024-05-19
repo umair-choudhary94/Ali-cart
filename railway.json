@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "$schema": "https://railway.app/railway.schema.json",
     "build": {
@@ -8,4 +9,16 @@
       "restartPolicyType": "ON_FAILURE",
       "restartPolicyMaxRetries": 10
     }
+=======
+{
+    "$schema": "https://railway.app/railway.schema.json",
+    "build": {
+      "builder": "NIXPACKS"
+    },
+    "deploy": {
+      "startCommand": "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn ecomprj.wsgi",
+      "restartPolicyType": "ON_FAILURE",
+      "restartPolicyMaxRetries": 10
+    }
+>>>>>>> c80f6755c752afc13d8d8f095411d8bbe0c3c570
   }

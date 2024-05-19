@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = "p-z9m(q24fsa)a$9&4r$pf3$z@&4og82ih&zdffzx05)lt$fp8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -58,10 +58,10 @@ INSTALLED_APPS = [
 
 
 # Security settings
-# CSRF_TRUSTED_ORIGINS = ['', 'https://alicart.tj']
+CSRF_TRUSTED_ORIGINS=['https://www.alicart.online','https://alicart.online']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 
