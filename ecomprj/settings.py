@@ -58,7 +58,7 @@ INSTALLED_APPS = [
 
 
 # Security settings
-# CSRF_TRUSTED_ORIGINS = ['', 'https://alicart.tj']
+CSRF_TRUSTED_ORIGINS=['https://www.alicart.online','https://alicart.online']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
