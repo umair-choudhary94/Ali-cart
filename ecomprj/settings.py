@@ -99,23 +99,23 @@ WSGI_APPLICATION = 'ecomprj.wsgi.application'
 
 
 
-# DATABASES = {
-#      "default": {
-#          "ENGINE": "django.db.backends.postgresql",
-#          "NAME": "to-check",
-#          "USER": "postgres",
-#          "PASSWORD": "DataBase24",
-#          "HOST": "127.0.0.1",
-#          "PORT": "5432",
-#      }
-#  }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+     "default": {
+         "ENGINE": "django.db.backends.postgresql",
+         "NAME": "railway",
+         "USER": "postgres",
+         "PASSWORD": "NhmgGcPmgeHIbGWVyXncXqhSMgfLDRdo",
+         "HOST": "viaduct.proxy.rlwy.net",
+         "PORT": "23171",
+     }
+ }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': os.getenv("ENGINE"),
